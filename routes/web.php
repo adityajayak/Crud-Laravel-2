@@ -20,7 +20,8 @@ Route::get('/create', 'PertanyaanController@create'); //menampilkan halaman form
 Route::post('/pertanyaan', 'PertanyaanController@store'); //menampilkan data 
 Route::get('/pertanyaan/{id}', 'PertanyaanController@answ'); //menampilkan form jawab
 Route::get('/pertanyaan/{id}/edit', 'PertanyaanController@edit'); //menampilkan form jawab 
-Route::put('/pertanyaan/{id}', 'PertanyaanController@update'); //menyimpan form
+Route::put('/pertanyaan/{id}', 'PertanyaanController@update'); //update form
+Route::delete('/pertanyaan/{id}', 'PertanyaanController@destroy'); //mengapus
 
 //penjawab
 Route::get('/make', 'PenjawabController@make'); //menampilkan halaman form
