@@ -18,7 +18,8 @@
             <td> {{ $key + 1}} </td> 
             <td> {{ $pertanyaan->judul }}</td>   
             <td> {{ $pertanyaan->isi }}</td>   
-            <td><a href="/pertanyaan/{{ $pertanyaan -> id }}" class="btn btn-sm btn-info">Answer</a>
+            <td><a href="/pertanyaan/{{ $pertanyaan -> id }}/show" class="btn btn-sm btn-default">Show</a>
+                <a href="/pertanyaan/{{ $pertanyaan -> id }}" class="btn btn-sm btn-default">Answer</a>
                 <a href="/pertanyaan/{{ $pertanyaan -> id }}/edit" class="btn btn-sm btn-default">Edit</a>
            <form action="/pertanyaan/{{ $pertanyaan->id }}" method="post" style="display: inline">
             @csrf

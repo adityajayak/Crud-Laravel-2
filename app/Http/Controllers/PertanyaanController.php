@@ -29,6 +29,12 @@ class PertanyaanController extends Controller
         $pertanyaan = PertanyaanModel::find_by_id($id);
         return view('pertanyaan.answ', compact('pertanyaan'));
     }
+    public function show($id)
+    {
+        $pertanyaan = PertanyaanModel::find_by_id($id);
+        return view('pertanyaan.show', compact('pertanyaan'));
+    }
+
     public function edit($id)
     {
         $pertanyaan = PertanyaanModel::find_by_id($id);

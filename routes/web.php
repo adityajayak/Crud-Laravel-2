@@ -22,6 +22,7 @@ Route::get('/pertanyaan/{id}', 'PertanyaanController@answ'); //menampilkan form 
 Route::get('/pertanyaan/{id}/edit', 'PertanyaanController@edit'); //menampilkan form jawab 
 Route::put('/pertanyaan/{id}', 'PertanyaanController@update'); //update form
 Route::delete('/pertanyaan/{id}', 'PertanyaanController@destroy'); //mengapus
+Route::get('/pertanyaan/{id}/show', 'PertanyaanController@show'); //menampilkan form jawab 
 
 //penjawab
 Route::get('/make', 'PenjawabController@make'); //menampilkan halaman form
